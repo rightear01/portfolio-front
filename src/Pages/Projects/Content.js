@@ -18,7 +18,7 @@ const projects = [
       common: {
           title: "WeGoHiVE",
           shortDesc: "클라우드 기반 통합 교육 플랫폼(Team)",
-          devPeriod:"기간 : 2024.11 ~ 2025.01",
+          devPeriod: "개발 기간 : 2024.11 ~ 2025.01",
           githubUrl: "https://github.com/rightear01/we-go-hive",
         },
 
@@ -88,7 +88,8 @@ const projects = [
         common: {
           title: "MiniFaceonChanger",
           shortDesc: "FC온라인 커스텀 미페 적용 프로그램(Personal)",
-          devPeriod:"기간 : 2024.07 ~ 2024.08",
+          devPeriod: "개발 기간 : 2024.07 ~ 2024.08",
+          depPeriod: "배포 기간 : 2024.08 ~ Ing",
           githubUrl: "https://github.com/rightear01/MiniFaceonChanger",
           },
   
@@ -157,7 +158,7 @@ const projects = [
         common: {
             title: "Harmony",
             shortDesc: "3D 지구본을 이용한 생물의 다양성 지도(Team)",
-            devPeriod:"기간 : 2024.11 ~ 2025.01",
+            devPeriod: "개발 기간 : 2024.11 ~ 2025.01",
             githubUrl: "https://github.com/rightear01/Harmony_Project_Front",
           },
   

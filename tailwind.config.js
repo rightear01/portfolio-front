@@ -1,5 +1,3 @@
-const plugin = require('tailwindcss/plugin');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
@@ -27,7 +25,8 @@ module.exports = {
         'black-han-sans': ['"Black Han Sans"', 'sans-serif'],
         'delicious': ['"Delicious Handrawn"', 'cursive'],
         'josefin': ['"Josefin Sans"', 'sans-serif'],
-        'noto-sans-kr': ['"Noto Sans KR"', 'sans-serif']
+        'noto-sans-kr': ['"Noto Sans KR"', 'sans-serif'],
+        'jua': ['"Jua"', 'sans-serif'],
       },
       boxShadow: {
         sunlike: '0 0 10px 2px rgba(248, 248, 248, 0.7), 0 0 20px 6px rgba(255, 255, 248, 0.5), 0 0 40px 10px rgba(248, 248, 248, 0.3), 0 0 60px 14px rgba(215, 0, 0, 0.15)'

@@ -8,7 +8,8 @@ const ShowDetail = ({ item, isMobile, closePopup }) => {
             <div className="max-sm:text-xl font-black-han-sans md:text-5xl max-md:text-4xl">{'📃'}{item.common.title}</div>
             <div className="mt-2 text-3xl font-semibold max-sm:mt-0 font-noto-sans-kr max-sm:text-base opacity-85">{'-' + item.common.shortDesc}</div>
             <div className="w-[100%] h-[2px] bg-black shadow-md mt-2"></div>
-            <div className="w-[100%] mt-1 font-noto-sans-kr font-bold max-sm:text-sm md:text-2xl max-md:text-xl">{item.common.devPeriod}</div>
+            <div className="w-[100%] mt-1 font-noto-sans-kr font-bold max-sm:text-sm md:text-xl max-md:text-lg opacity-70">{item.common.devPeriod}</div>
+            {item.common.depPeriod && <div className="w-[100%] mt-1 font-noto-sans-kr font-bold max-sm:text-sm md:text-xl max-md:text-lg opacity-70">{item.common.depPeriod && item.common.depPeriod}</div>}
             <div className="absolute cursor-pointer opacity-65 right-5 top-5 max-sm:right-2 max-sm:top-1">
                 <FontAwesomeIcon icon={faClose}
                     style={{
@@ -33,7 +34,7 @@ const ShowDetail = ({ item, isMobile, closePopup }) => {
                         >
                             <source src={video.src} type="video/mp4" />
                      </video>
-                     <div className="w-[100%] border-l-4 h-auto p-4 mt-2 gradient-border shadow-md mb-4">
+                     <div className="w-[100%] border-l-4 h-auto p-4 mt-2 gradient-border shadow-md mb-4 max-sm:font-semibold">
                         {video.desc.map((item, index) => {
                             return (
                                 <div key={index} className="flex items-start mb-2 font-noto-sans-kr md:text-xl max-sm:text-sm">
