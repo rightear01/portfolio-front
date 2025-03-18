@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import { faPaperclip } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -32,7 +32,7 @@ const Home = () => {
 							<div className="relative text-2xl font-bold text-white opacity-75 top-8 -left-8">Contact</div>
 						</div>
             <div className={`absolute w-[30px] bg-gray-500 rounded-full h-[30px] max-sm:top-20 top-24 left-[15%] cursor-pointer hover:shadow-sunlike hover:ring-custom-sun transition-shadow duration-500 ${initEffect ? 'shadow-sunlike' : ''}`} onClick={handleOnClick}>
-							<div className="relative text-2xl font-bold text-white opacity-75 top-8 -left-14">Introduction</div>
+							<div className="relative text-2xl font-bold text-white opacity-75 top-8 -left-3">Skills</div>
 						</div>
             <div className={`absolute w-[30px] bg-gray-500 rounded-full h-[30px]  bottom-6 max-sm:bottom-2 left-[30%] max-sm:left-[27%] cursor-pointer hover:shadow-sunlike hover:ring-custom-sun transition-shadow duration-500 ${initEffect ? 'shadow-sunlike' : ''}`} onClick={handleOnClick}>
 							<div className="relative text-2xl font-bold text-white opacity-75 top-8 -left-11 whitespace-nowrap">AboutMe</div>
@@ -45,4 +45,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default React.memo(Home);
