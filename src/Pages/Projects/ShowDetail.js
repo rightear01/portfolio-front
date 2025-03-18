@@ -3,9 +3,9 @@ import { faCircleChevronRight } from "@fortawesome/free-solid-svg-icons/faCircle
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 
-const ShowDetail = ({ item, isMobile, closePopup }) => {
-     
+const ShowDetail = ({ item, isMobile, closePopup }) => { 
     const [videoKey, setVideoKey] = useState(Date.now());
+
     useEffect(() => {
         setVideoKey(Date.now());
     }, [item]);
@@ -81,17 +81,16 @@ const ShowDetail = ({ item, isMobile, closePopup }) => {
                             <div className="mr-2">{index + 1}.</div>
                             <div>{video.title}</div>
                         </div>
-                        <video 
+                        <video
                             key={videoKey}
                             playsInline
-                            loop
                             muted
                             controls
-                            autoPlay
-                            style={{ width: '100%', height: 'auto' }}
+                            poster={video.thumNail}
+                            style={{ width: "100%", height: "auto" }}
                         >
-                            <source src={video.src} type="video/mp4" />
-                     </video>
+                        <source src={video.src} type="video/mp4" />
+                        </video>
                      <div className="w-[100%] h-auto p-4 shadow-md mb-4 max-sm:font-semibold border-l-4">
                         {video.desc.map((item, index) => {
                             return (

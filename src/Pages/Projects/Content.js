@@ -2,6 +2,10 @@ import MfcMain from "../../Img/Videos/MiniFaceonChanger/MfcMain.mp4"
 import PlayerSearch from "../../Img/Videos/MiniFaceonChanger/PlayerSearch.mp4"
 import Apply from "../../Img/Videos/MiniFaceonChanger/Apply.mp4"
 import Reset from "../../Img/Videos/MiniFaceonChanger/Reset.mp4"
+import MfcThum1 from "../../Img/Videos/MiniFaceonChanger/Thumbnail/Thum1.png"
+import MfcThum2 from "../../Img/Videos/MiniFaceonChanger/Thumbnail/Thum2.png"
+import MfcThum3 from "../../Img/Videos/MiniFaceonChanger/Thumbnail/Thum3.png"
+import MfcThum4 from "../../Img/Videos/MiniFaceonChanger/Thumbnail/Thum4.png"
 import SettingPath from "../../Img/Videos/MiniFaceonChanger/SettingPath.mp4"
 
 import HarmonyMain from "../../Img/Videos/Harmony/HarmonyMain.mp4"
@@ -11,6 +15,12 @@ import Expended from "../../Img/Videos/Harmony/Search_3_.mp4"
 import RandomPick from "../../Img/Videos/Harmony/Search_4_.mp4"
 import Quiz from "../../Img/Videos/Harmony/Search_5_.mp4"
 import Rank from "../../Img/Videos/Harmony/Search_6_.mp4"
+import HarmonyThum1 from "../../Img/Videos/Harmony/Thumbnail/Thum1.png"
+import HarmonyThum2 from "../../Img/Videos/Harmony/Thumbnail/Thum2.png"
+import HarmonyThum3 from "../../Img/Videos/Harmony/Thumbnail/Thum3.png"
+import HarmonyThum4 from "../../Img/Videos/Harmony/Thumbnail/Thum4.png"
+import HarmonyThum5 from "../../Img/Videos/Harmony/Thumbnail/Thum5.png"
+import HarmonyThum6 from "../../Img/Videos/Harmony/Thumbnail/Thum6.png"
 import HarmonyDoc from "../../document/Harmony/Harmony조 캡스톤 디자인 보고서.hwp"
 
 import MainPage from "../../Img/Videos/WeGoHiVE/MainPage.mp4"
@@ -152,7 +162,8 @@ const projects = [
                 desc : [
                   'FC 온라인 데이터센터를 데이터 크롤링을 통하여 검색된 선수의 시즌 별 이미지와 사진 정보를 프로그램에 출력합니다.',
                   '출력된 각 이미지를 클릭 할 경우 사진 변경을 진행할 수 있는 팝업창이 출력됩니다.'
-                ]
+                ],
+                thumNail : MfcThum1
               },
               {
                 src : Apply,
@@ -160,7 +171,8 @@ const projects = [
                 desc : [
                   '출력된 팝업창에 적용을 원하는 이미지를 Drag and Drop을 진행합니다.',
                   '이후 인게임에 적용된 모습을 확인 가능합니다.'
-                ]
+                ],
+                thumNail : MfcThum2
               },
               {
                 src : Reset,
@@ -168,8 +180,8 @@ const projects = [
                 desc : [
                   `동일한 팝업창에 존재하는 '미페 초기화' 버튼을 클릭.`,
                   'FC 온라인 데이터 센터에 지정되어있는 기본 이미지로 변환이 가능합니다.'
-                
-                ]
+                ],
+                thumNail : MfcThum3
               },
               {
                 src : SettingPath,
@@ -177,7 +189,8 @@ const projects = [
                 desc : [
                   '커스텀 미니페이스온을 적용하기 위한 디렉터리 경로 설정으로',
                   'FC 온라인이 다운로드 되어있는 루트 디렉터리로 설정합니다.'
-                ]
+                ],
+                thumNail : MfcThum4
               }
             ],
 
@@ -267,7 +280,8 @@ const projects = [
                   "마우스를 조작하여 페이지 전면에 존재하는 3D 지구본을 탐방해 볼 수 있습니다.",
                   "마우스를 나라에 올려 놓으면, 나라의 한글 명칭과 영문 명칭이 함께 출력되게 제작하였습니다.",
                   "팝업창은 Drag이벤트를 통하여 좌표 변경이 가능합니다."
-                ]
+                ],
+                thumNail : HarmonyThum1
               },
               {
                 src : SearchCountry,
@@ -275,7 +289,8 @@ const projects = [
                 desc : [
                   "지구본에 출력되어 있는 나라를 클릭하면, 나라에 서식하는 멸종위기종에 대한 데이터를 조회 가능합니다.",
                   "특정 멸종위기종을 클릭하면, 멸종위기종의 세부정보를 담고 있는 팝업창이 출력됩니다."
-                ]
+                ],
+                thumNail : HarmonyThum2
               },
               {
                 src : Expended,
@@ -283,7 +298,8 @@ const projects = [
                 desc : [
                   "출력된 팝업창에서 '나라 더보기' 버튼을 클릭하면, 객체 안전도 비율의 색상에 따라 종이 서식하고 있는 모든 나라들을 시각적으로 확인할 수 있습니다.",
                   "해당 상태에서는 지구본을 조작하더라도 검색 및 조회 또는 '더보기 해제'를 진행하지 않으면, 시각적으로 표현된 나라들의 상태가 변하지 않게됩니다."
-                ]
+                ],
+                thumNail : HarmonyThum3
               },
               {
                 src : RandomPick,
@@ -291,7 +307,8 @@ const projects = [
                 desc : [
                   "생물의 다양성 문제를 사용자에게 호소하기 위해서는 다양한 멸종위기종에 대한 정보를 지속적으로 노출시켜야 한다고 생각하여 제작하게 되었습니다.",
                   "20초마다 랜덤한 4종의 멸종위기종이 출력되며, 특정 종을 클릭시 종의 세부정보를 담고있는 팝업창이 출력됩니다."
-                ]
+                ],
+                thumNail : HarmonyThum4
               },
               {
                 src : Quiz,
@@ -300,14 +317,16 @@ const projects = [
                   "멸종위기종에 대한 정보를 쉽게 학습할 수 있는 퀴즈 시스템입니다.",
                   "그림의 정답과 그렇지 않은 3종의 명칭이 출력됩니다.",
                   "정답을 제출하게 되면, 점수(Score)가 증가하며, 오답을 제출하게 되면 점수의 감소와 3초 동안 정답인 명칭을 출력하여 피드백을 진행합니다."
-                ]
+                ],
+                thumNail : HarmonyThum5
               },
               {
                 src : Rank,
                 title : '조회 랭킹 시스템',
                 desc : [
                   "하루동안 누적된 멸종위기종 검색 횟수를 순위와 함께 노출하는 팝업창입니다."
-                ]
+                ],
+                thumNail : HarmonyThum6
               }
             ],
 

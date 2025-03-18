@@ -42,7 +42,7 @@ const Projects = () => {
     }, [expanded]);
 
     return (
-        <div className="flex justify-center items-center w-full min-h-[100%] mt-14 flex-col">
+        <div className="flex items-center w-full min-h-[100%] xl:min-h-[1200px] mt-14 flex-col">
             <SideBar />
             <div className="flex flex-col w-[75%] max-xl:w-[90%]">
                 <div className="text-5xl text-white font-black-han-sans">Projects</div>
@@ -73,7 +73,7 @@ const Projects = () => {
                                     <source src={item.preView.mainVid} type="video/mp4" />
                                 </video>
                     
-                                <div className="xl:absolute xl:bottom-10 max-xl:bottom-2 max-xl:w-[100%] w-[90%] flex justify-center items-center max-xl:mt-4 ">
+                                <div className="xl:absolute xl:bottom-10 max-xl:bottom-2 max-xl:w-[100%] w-[90%] flex items-center max-xl:mt-4 justify-center">
                                     <Button 
                                         variant="contained"
                                         color="info"
@@ -108,7 +108,7 @@ const Projects = () => {
             >
                 {selectedItem && <ShowDetail item={selectedItem} isMobile={isMobile} closePopup={() => setExpanded(false)} />}
             </Dialog>
-            <div className="w-[100%] bg-gradient-to-r from-black via-[#1b242f] to-black h-[150px] bottom-0 flex justify-center items-center shadow-lg rounded-t-md flex-col max-sm:h-[170px] mt-4">
+            <div className="w-[100%] bg-gradient-to-r from-black via-[#1b242f] to-black h-[150px]  flex justify-center items-center shadow-lg rounded-t-md flex-col max-sm:h-[170px] mt-4 xl:absolute bottom-0">
                 <div className="flex text-2xl text-white font-black-han-sans max-sm:text-lg">Copyright 2025.
                     <div className="ml-3 text-3xl leading-5 text-white font-delicious max-sm:text-2xl max-sm:leading-5 ">rightear01@gmail.com</div>
                 </div>
