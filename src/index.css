@@ -9,11 +9,9 @@
 #root {
   position: relative;
   margin: 0 auto;
-  min-width: 100vw;
   min-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  width: auto;
   background: linear-gradient(to right, black, #1F2937);
 }
 

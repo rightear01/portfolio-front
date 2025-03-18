@@ -9,8 +9,17 @@ import Expended from "../../Img/Videos/Harmony/Search_3_.mp4"
 import RandomPick from "../../Img/Videos/Harmony/Search_4_.mp4"
 import Quiz from "../../Img/Videos/Harmony/Search_5_.mp4"
 import Rank from "../../Img/Videos/Harmony/Search_6_.mp4"
+import HarmonyDoc from "../../document/Harmony/Harmony조 캡스톤 디자인 보고서.hwp"
 
 import MainPage from "../../Img/Videos/WeGoHiVE/MainPage.mp4"
+import WeGoHiveDoc from "../../document/WeGoHiVE/1조 프로젝트 수행 결과 보고서 WeGoHiVE.pptx"
+
+import FmKorea from "../../Img/ETC/FmKorea.png"
+import Inven from "../../Img/ETC/Inven.png"
+import GoogleDrive from "../../Img/ETC/GoogleDrive.png"
+import Git from "../../Img/ETC/Git.jpg"
+import Hwp from "../../Img/ETC/Hwp.png"
+import Ppt from "../../Img/ETC/Ppt.png"
 
 const projects = [
     {
@@ -19,7 +28,7 @@ const projects = [
           title: "WeGoHiVE",
           shortDesc: "클라우드 기반 통합 교육 플랫폼(Team)",
           devPeriod: "개발 기간 : 2024.11 ~ 2025.01",
-          githubUrl: "https://github.com/rightear01/we-go-hive",
+          
         },
 
       preView: {
@@ -32,7 +41,10 @@ const projects = [
       },
       
       main: { 
-        devBackground: "디지털 시대의 학습 환경은 빠르게 변화하고 있으며, 기존의 온라인과 오프라인 교육이 연계 중심이 아닌 별도의 운영을 진행하고 있어, 소통과 접근성에서 한계를 보이고 있습니다. 이러한 문제를 해결하기 위해, 누가나 손쉽게 학습에 접근하고 개인화된 학습 경험을 제공할 수 있는 오라인 교육 플랫폼을 기획하게 되었습니다.",
+        devBackground: [
+          "디지털 시대의 학습 환경은 빠르게 변화하고 있으며, 기존의 온라인과 오프라인 교육이 연계 중심이 아닌 별도의 운영을 진행하고 있어, 소통과 접근성에서 한계를 보이고 있습니다.",
+          "이러한 문제를 해결하기 위해, 누가나 손쉽게 학습에 접근하고 개인화된 학습 경험을 제공할 수 있는 온라인 교육 플랫폼을 기획하게 되었습니다."
+        ],
         projectFeatures: [
           "React framework를 통해 SPA 방식으로 구현하였으며, 테일윈드 CSS와 MUI 라이브러리를 통해, 반응형 웹(모바일 환경 지원)형식으로 빠르게 구현할 수 있었습니다.",
           "SpringBoot를 사용하여 RestAPI를 구현하였고 Lombok 라이브러리를 통해 코드 다이어트를 진행하였습니다.",
@@ -81,6 +93,21 @@ const projects = [
           "Oracle 19C(배포 시 사용)",
           "MySQL 8.0.39(개발 시 사용)"
         ],
+
+        extraSrc : [
+          {
+            img: Ppt,
+            src : '결과 보고서',
+            category: 'File',
+            link: WeGoHiveDoc
+          },
+          {
+            img: Git,
+            src : 'GitHub',
+            category: 'link',
+            link: 'https://github.com/rightear01/we-go-hive'
+          },
+        ]
       }
     },
     {
@@ -90,7 +117,6 @@ const projects = [
           shortDesc: "FC온라인 커스텀 미페 적용 프로그램(Personal)",
           devPeriod: "개발 기간 : 2024.07 ~ 2024.08",
           depPeriod: "배포 기간 : 2024.08 ~ Ing",
-          githubUrl: "https://github.com/rightear01/MiniFaceonChanger",
           },
   
           preView: {
@@ -103,19 +129,17 @@ const projects = [
           },
         
           main: {
-            devBackground: "넥슨에서 피파 온라인 시리즈를 서비스한 이래로 많은 유저들이 제작한 선수 이미지가 각종 커뮤니티(inven, FM korea등)와 인터넷 상에 누적되어 왔습니다.이를 적용할 수 있는 프로그램 몇몇 등장하였으나, 사용성이 떨어지고 별도의 DB를 두었기 때문에 선수가 추가되면 개발자가 지속적으로 선수단 DB를 관리하고 이를 유저들이 직접 찾아서 다운로드 해야하는 번거로움이 존재하였고 게임 내부의 다른 이미지로 덮어 씌우는 것에 불과하였기 때문에 유저들이 제작한 이미지를 적용하기 위해서는 복잡한 과정을 거쳐야만 가능했습니다. 이러한 문제를 해결하기 위해 개발을 기획하게 되었습니다.",
-            projectFeatures: [
-              "React framework를 통해 SPA 방식으로 구현하였으며, 테일윈드 CSS와 MUI 라이브러리를 통해, 반응형 웹(모바일 환경 지원)형식으로 빠르게 구현할 수 있었습니다.",
-              "SpringBoot를 사용하여 RestAPI를 구현하였고 Lombok 라이브러리를 통해 코드 다이어트를 진행하였습니다.",
-              "Youtube API를 사용하여 유튜브를 클라우드 스토리지 처럼 사용하고 Youtube의 영상 플레이어를 사용하여 강의 환경을 구축하였습니다. 또한 사용자의 강의 회차 별 영상 최대 시청 기록을 추적하여 과목의 진도율을 계산 및 업데이트를 진행하였고, 영상 별 책갈피 기능을 제공하여 강의 영상에 중요한 부분의 메모와 시점 이동 기능을 구현하였습니다.",
-              "회원, 비회원, 강사, 책임자, 개별 과목 책임자, 사이트 관리자로 분리되는 권한을 두어 각 권한에 해당하는 기능을 별도로 분리하여 RBAC를 구현하였습니다.",
-              "만족도 조사 기능이 존재하여 책임자와 개별 과목 책임자 권한을 통해 만족도 조사의 답변 유형과 문항을 등록할 수 있습니다. 또한 사용자는 수강중인 과목과 과정에 등록된 만족도 조사에 응답 가능합니다."
+            devBackground: [
+              "넥슨에서 피파 온라인 시리즈를 서비스한 이래로 많은 유저들이 제작한 선수 이미지가 각종 커뮤니티(inven, FM korea등)와 인터넷 상에 누적되어 왔습니다.",
+              "이를 적용할 수 있는 프로그램 몇몇 등장하였으나, 사용성이 떨어지고 프로그램 내부에 DB를 두었기 때문에 선수가 추가되면 개발자가 지속적으로 선수단 DB를 관리하고 이를 유저들이 직접 찾아서 다운로드 해야하는 번거로움이 존재하였고 유저들이 제작한 이미지를 적용하기 위해서는 복잡한 과정을 거쳐야만 가능했습니다.",
+              "이러한 문제를 해결하기 위한 방법으로 FC 온라인의 데이터 센터에서 이미지와 다른 데이터를 가져오는 방식으로 개발을 기획하게 되었습니다."
             ],
-            whatIDid: [
-              "본 프로젝트에서 팀장과 풀스택 개발 팀원으로 참여하였습니다. 활발한 커뮤니케이션이 프로젝트에 미치는 영향이 높다고 생각하였기 때문에 소통과 팀원간의 융합에 노력을 많이 기울였습니다. 프로젝트 초기의 사용해야할 라이브러리를 추합하여 이를 Notion으로 사용 방법과 지켜야할 규칙 등을 팀원들과 공유하고 DB 설계 시 ERD-Cloud와 해당 사이트의 메모 기능을 사용하여 테이블의 존재 이유와 추후 사용되는 용도에 대하여 명확하게 하였습니다.",
-              "풀스택 개발 팀원으로서 YoutubeAPI를 통한 영상 학습시스템을 구현하였습니다. 사용자가 신청한 과정 및 개별 과목에 대한 강의 영상 별로 전체 시청을 완료한 이력이 없는 영상에 대하여 영상이 재생 중일 경우에 한하여, 3초 간격으로 SpringBoot 서버에 진행도와 마지막 시청 시점을 업데이트 하는 기능을 구현하였고 시청한 이력이 없는 시점에 대한 이동과 이전 회차를 수강완료하지 않은 상태에서 다음 회차로 이동을 방지하는 기능, 배속 기능을 막는 기능을 구현하였습니다. 또한 영상의 특정 시점을 간단한 메모와 함께 저장하는 책갈피 기능을 구현하였습니다.",
-              "과제 제출 시스템을 구현하였습니다. 할당 받은 과제에 파일을 첨부하여 제출되는 시스템으로 과제 제출이 가능한 기간에 한정하여 파일을 첨부하면, 서버에 파일이 등록되는 방식입니다. 세부적으로 파일의 중복을 피하기 위하여 저장되는 파일 명은 UUID로 처리하여 실제 서버에 중복을 최소화 하여 저장되게 처리하였고 DB에는 UUID 처리된(암호화) 파일 명, 파일을 등록한 사용자의 데이터와 원본 파일 명, 파일의 크기, 서버에 저장된 경로가 업데이트되게 로직을 구현하였습니다.",
-              "책임자 권한과 개별 과목 책임자의 전용 페이지의 프론트엔드를 구현하였습니다. 주요 구현 기능으로는 nivo 라이브러리를 사용하여 문항별 사용자의 만족도 조사 결과를 원 그래프와 막대 그래프로 표현하였고, 만족도 조사의 문항 목록에 문항을 답변 유형별로 생성과 삭제하는 기능과 과정과 과목 별로 문항들을 등록하여 만족도 조사를 실시하는 기능을 구현하였습니다. 또한 과정을 생성하는 기능을 구현하였습니다. 세부적으로, 기존에 개설된 개별 과목들과 임의의 강사가 배치되지 않은 과목들을 등록하여 과정 명, 참여 정원, 과정의 이미지 등의 데이터와 함께 과정을 생성할 수 있게 기능을 구현하였습니다."
+            projectFeatures: [
+              "게임 상에 선수들이 새로 생성되어도 Selenium라이브러리를 통한 홈페이지의 데이터센터를 크롤링하였기 때문에 추가적인 선수들 정보 업데이트를 진행하지 않아도 되어 프로그램 업데이트를 최소화 하였습니다.",
+              "기존 유저들이 외부에서 제작된 선수의 사진을 게임에서 사용하기 위해서 거쳐야 하는 방법을 기반으로 FC온라인 홈페이지의 데이터 센터의 URL들과 반환되는 값들을 분석하여 알고리즘을 구상하였습니다.",
+              "웹 사이트 상에서 게임이 설치되어 있는 로컬 디렉터리에 접근하여 파일을 변조하는 방법은 웹의 정책 상 허용되지 않는 방식이기에 UI를 Java Swing과 Java awt를 사용하여 구성하게 되었습니다. ",
+              "DropTargetDropEvent를 사용하여 사용자가 변경하고자 하는 선수를 검색 및 클릭하고 특정 이미지를 Drag and Drop 하면 쉽게 변경 가능하게 구성하였습니다.",
+              "커뮤니티 사이트인 에펨코리아, FC온라인 인벤 등에 Google Drive링크를 첨부하였고 유저들과 소통하면서 받은 피드백을 수용하여 버전 관리를 수 차례 진행했습니다."
             ],
 
             videos: [
@@ -123,24 +147,34 @@ const projects = [
                 src : PlayerSearch,
                 title : '시즌 별 선수 검색',
                 desc : [
-                  'FC 온라인 데이터센터를 데이터 크롤링을 통하여 검색된 선수의 시즌 별 이미지와 사진 정보를 프로그램에 출력.',
-                  '출력된 각 이미지를 클릭 할 경우 사진 변경을 진행할 수 있는 팝업창을 출력.'
+                  'FC 온라인 데이터센터를 데이터 크롤링을 통하여 검색된 선수의 시즌 별 이미지와 사진 정보를 프로그램에 출력합니다.',
+                  '출력된 각 이미지를 클릭 할 경우 사진 변경을 진행할 수 있는 팝업창이 출력됩니다.'
                 ]
               },
               {
                 src : Apply,
                 title : '커스텀 미니페이스온 적용',
-                desc : []
+                desc : [
+                  '출력된 팝업창에 적용을 원하는 이미지를 Drag and Drop을 진행합니다.',
+                  '이후 인게임에 적용된 모습을 확인 가능합니다.'
+                ]
               },
               {
                 src : Reset,
                 title : '미니페이스온 초기화',
-                desc : []
+                desc : [
+                  '동일한 팝업창에 존재하는 미페 초기화 버튼을 클릭.',
+                  'FC 온라인 데이터 센터에 지정되어있는 기본 이미지로 변환이 가능합니다.'
+                
+                ]
               },
               {
                 src : SettingPath,
                 title : '디렉터리 경로 설정',
-                desc : []
+                desc : [
+                  '커스텀 미니페이스온을 적용하기 위한 디렉터리 경로 설정으로',
+                  'FC 온라인이 다운로드 되어있는 루트 디렉터리로 설정합니다.'
+                ]
               }
             ],
 
@@ -151,6 +185,33 @@ const projects = [
               "Selenium 4.25",
               "lunch4j",
             ],
+
+            extraSrc : [
+              {
+                img: FmKorea,
+                src : 'FmKorea',
+                category: 'link',
+                link: 'https://www.fmkorea.com/7408686985'
+              },
+              {
+                img: Inven,
+                src : 'Inven',
+                category: 'link',
+                link: 'https://www.inven.co.kr/board/fifaonline4/3145/54395'
+              },
+              {
+                img: GoogleDrive,
+                src : 'GoogleDrive',
+                category: 'link',
+                link: 'https://drive.google.com/file/d/1cAdQVqQqHSd0XAwPuzOTFxWWYV1RbFOo/view'
+              },
+              {
+                img: Git,
+                src : 'GitHub',
+                category: 'link',
+                link: 'https://github.com/rightear01/MiniFaceonChanger'
+              },
+            ]
           }
       },
       {
@@ -159,7 +220,6 @@ const projects = [
             title: "Harmony",
             shortDesc: "3D 지구본을 이용한 생물의 다양성 지도(Team)",
             devPeriod: "개발 기간 : 2024.11 ~ 2025.01",
-            githubUrl: "https://github.com/rightear01/Harmony_Project_Front",
           },
   
           preView: {
@@ -174,7 +234,10 @@ const projects = [
           },
           
           main: {
-            devBackground: "디지털 시대의 학습 환경은 빠르게 변화하고 있으며, 기존의 온라인과 오프라인 교육이 연계 중심이 아닌 별도의 운영을 진행하고 있어, 소통과 접근성에서 한계를 보이고 있습니다. 이러한 문제를 해결하기 위해, 누가나 손쉽게 학습에 접근하고 개인화된 학습 경험을 제공할 수 있는 오라인 교육 플랫폼을 기획하게 되었습니다.",
+            devBackground: [
+              "디지털 시대의 학습 환경은 빠르게 변화하고 있으며, 기존의 온라인과 오프라인 교육이 연계 중심이 아닌 별도의 운영을 진행하고 있어, 소통과 접근성에서 한계를 보이고 있습니다.",
+              "이러한 문제를 해결하기 위해, 누가나 손쉽게 학습에 접근하고 개인화된 학습 경험을 제공할 수 있는 온라인 교육 플랫폼을 기획하게 되었습니다."
+            ],
             projectFeatures: [
               "React framework를 통해 SPA 방식으로 구현하였으며, 테일윈드 CSS와 MUI 라이브러리를 통해, 반응형 웹(모바일 환경 지원)형식으로 빠르게 구현할 수 있었습니다.",
               "SpringBoot를 사용하여 RestAPI를 구현하였고 Lombok 라이브러리를 통해 코드 다이어트를 진행하였습니다.",
@@ -232,6 +295,21 @@ const projects = [
               "IUCN RedList API",
               "MySQL 8.0.39"
             ],
+
+            extraSrc : [
+              {
+                img: Hwp,
+                src : '프로젝트 보고서',
+                category: 'File',
+                link: HarmonyDoc
+              },
+              {
+                img: Git,
+                src : 'GitHub',
+                category: 'link',
+                link: 'https://github.com/rightear01/Harmony_Project_Front'
+              },
+            ]
           }
       },
   ];

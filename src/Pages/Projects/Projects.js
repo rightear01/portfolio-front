@@ -25,10 +25,10 @@ const Projects = () => {
             <div className="flex flex-col w-[75%] max-xl:w-[90%]">
                 <div className="text-5xl text-white font-black-han-sans">Projects</div>
                 <div className="w-[100%] h-[2px] bg-white mt-3 animate-slideIn rounded-sm"></div>
-                <div className="w-[100%] h-auto flex justify-between">
-                    <div className="w-[100%] flex max-xl:flex-col justify-between max-xl:mb-5">
+                <div className="w-[100%] h-auto flex justify-around">
+                    <div className="w-[100%] flex max-xl:flex-col justify-between mb-5">
                         {content.map((item) => (
-                            <div className="relative max-xl:w-[100%] w-[33%] max-xl:h-auto h-[950px] mt-5 p-5 border-2 border-white rounded-md" key={item.id}>
+                            <div className="relative max-xl:w-[100%] w-[33%] max-xl:h-auto xl:h-[850px] mt-5 p-5 border-2 border-white rounded-md" key={item.id}>
                                 <div className="text-2xl text-white max-md:text-2xl font-black-han-sans">{item.common.title}</div>
                                 <div className="text-xl text-white font-noto-sans-kr opacity-85">{item.common.shortDesc}</div>
                                 <div className="w-[100%] h-[2px] bg-white mt-3 animate-slideIn rounded-sm"></div>
