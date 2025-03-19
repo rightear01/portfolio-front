@@ -23,10 +23,10 @@ const SideBar = () => {
       text: (
         <Box>
           <FontAwesomeIcon icon={faCircle} style={{ marginRight: '8px' }} />
-          Introduction
+          Projects
         </Box>
       ),
-      key: 'Introduction',
+      key: 'Projects'
     },
     {
       text: (
@@ -41,10 +41,10 @@ const SideBar = () => {
       text: (
         <Box>
           <FontAwesomeIcon icon={faCircle} style={{ marginRight: '8px' }} />
-          Projects
+          Skills
         </Box>
       ),
-      key: 'Projects'
+      key: 'Skills',
     },
     {
       text: (

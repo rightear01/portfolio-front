@@ -73,7 +73,7 @@ const Projects = () => {
                                     <source src={item.preView.mainVid} type="video/mp4" />
                                 </video>
                     
-                                <div className="xl:absolute xl:bottom-10 max-xl:bottom-2 max-xl:w-[100%] w-[90%] flex items-center max-xl:mt-4 justify-center">
+                                <div className="xl:absolute xl:bottom-6 max-xl:bottom-2 max-xl:w-[100%] w-[90%] flex items-center max-xl:mt-4 justify-center">
                                     <Button 
                                         variant="contained"
                                         color="info"

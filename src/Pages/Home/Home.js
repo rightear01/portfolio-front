@@ -28,17 +28,21 @@ const Home = () => {
             <div className={`absolute w-[30px] bg-gray-500 rounded-full h-[30px] top-4 left-[45%] cursor-pointer hover:shadow-sunlike hover:ring-custom-sun transition-shadow duration-500 ${initEffect ? 'shadow-sunlike' : ''}`} onClick={handleOnClick}>
 							<div className="relative text-2xl font-bold text-white opacity-75 top-8 -left-5">Home</div>
 						</div>
+            
             <div className={`absolute w-[30px] bg-gray-500 rounded-full h-[30px] max-sm:top-20 top-24 right-[15%] cursor-pointer hover:shadow-sunlike hover:ring-custom-sun transition-shadow duration-500 ${initEffect ? 'shadow-sunlike' : ''}`} onClick={handleOnClick}>
 							<div className="relative text-2xl font-bold text-white opacity-75 top-8 -left-8">Contact</div>
 						</div>
+
             <div className={`absolute w-[30px] bg-gray-500 rounded-full h-[30px] max-sm:top-20 top-24 left-[15%] cursor-pointer hover:shadow-sunlike hover:ring-custom-sun transition-shadow duration-500 ${initEffect ? 'shadow-sunlike' : ''}`} onClick={handleOnClick}>
-							<div className="relative text-2xl font-bold text-white opacity-75 top-8 -left-3">Skills</div>
+              <div className="relative text-2xl font-bold text-white opacity-75 top-8 -left-8">Projects</div>
 						</div>
+
             <div className={`absolute w-[30px] bg-gray-500 rounded-full h-[30px]  bottom-6 max-sm:bottom-2 left-[30%] max-sm:left-[27%] cursor-pointer hover:shadow-sunlike hover:ring-custom-sun transition-shadow duration-500 ${initEffect ? 'shadow-sunlike' : ''}`} onClick={handleOnClick}>
 							<div className="relative text-2xl font-bold text-white opacity-75 top-8 -left-11 whitespace-nowrap">AboutMe</div>
 						</div>
+
             <div className={`absolute w-[30px] bg-gray-500 rounded-full h-[30px]  bottom-6 right-[30%] max-sm:right-[27%] max-sm:bottom-2 cursor-pointer hover:shadow-sunlike hover:ring-custom-sun transition-shadow duration-500 ${initEffect ? 'shadow-sunlike' : ''}`} onClick={handleOnClick}>
-							<div className="relative text-2xl font-bold text-white opacity-75 top-8 -left-8">Projects</div>
+              <div div className="relative text-2xl font-bold text-white opacity-75 top-8 -left-3">Skills</div>
 						</div>
         </div>
       </div>
